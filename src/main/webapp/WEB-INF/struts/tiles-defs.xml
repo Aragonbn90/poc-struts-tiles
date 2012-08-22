@@ -1,0 +1,21 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+"http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+<tiles-definitions>
+
+   <definition name="monLayout" path="/pages/tiles/template.jsp">
+      <put name="head" value="/pages/tiles/head.jsp" />
+      <put name="header" value="/pages/tiles/header.jsp" />
+      <put name="menu" value="/pages/tiles/menu.jsp" />
+      <put name="footer" value="/pages/tiles/footer.jsp" />
+   </definition>
+
+   <definition name="liste1" extends="monLayout">
+      <put name="body" value="/pages/listes/liste1.jsp" />
+   </definition>
+
+   <definition name="liste2" extends="monLayout">
+      <put name="body" value="/pages/listes/liste2.jsp" />
+   </definition>
+
+</tiles-definitions>
